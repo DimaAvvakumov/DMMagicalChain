@@ -11,5 +11,6 @@
 
 + (void) chain_saveWithBlock:(void(^)(NSManagedObjectContext *localContext))block completion:(MRSaveCompletionHandler)completion;
 + (void) chain_saveWithBlock:(void(^)(NSManagedObjectContext *localContext))block;
-
++ (void) chain_saveWithBlockAndWait:(void (^)(NSManagedObjectContext *))block;
+    
 @end
